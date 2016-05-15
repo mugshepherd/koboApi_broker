@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :kobo_data
   root 'kobo_data#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
