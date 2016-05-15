@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rest-client'
+
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'rails', '4.2.5.1'
 
