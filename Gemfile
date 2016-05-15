@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rest-client'
+gem 'active_model_serializers', '~> 0.8.3'
 
+gem 'rest-client'
 gem 'dotenv-rails', :groups => [:development, :test]
 gem 'rails', '4.2.5.1'
 
