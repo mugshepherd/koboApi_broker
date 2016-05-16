@@ -1,18 +1,14 @@
 source 'https://rubygems.org'
-
 gem 'rest-client'
 
-gem 'dotenv-rails', :groups => [:development, :test]
 gem 'rails', '4.2.5.1'
-
 gem 'rails-api'
-
 gem 'spring', :group => :development
-
-
 gem 'sqlite3'
 
-
+# gem for environment variables
+gem 'dotenv-rails', :groups => [:development, :test]
+gem 'figaro' # run bundle exec figaro install
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

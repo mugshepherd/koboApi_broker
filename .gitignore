@@ -18,3 +18,5 @@
 *.sublime-project
 *.sublime-workspace
 .env
+# Ignore application configuration
+/config/application.yml
