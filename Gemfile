@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
-gem 'rest-client'
 
+# gem 'active_model_serializers', '~> 0.8.3'
+gem 'active_model_serializers', :git => 'git://github.com/AskNative/active_model_serializers.git', :branch => '0-8-stable'
+gem 'rest-client'
+gem 'pg'
 gem 'rails', '4.2.5.1'
 gem 'rails-api'
 gem 'spring', :group => :development
-gem 'sqlite3'
 
 # gem for environment variables
 gem 'dotenv-rails', :groups => [:development, :test]

@@ -18,5 +18,6 @@
 *.sublime-project
 *.sublime-workspace
 .env
+garbage.json
 # Ignore application configuration
 /config/application.yml
