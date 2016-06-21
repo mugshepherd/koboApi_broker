@@ -6,7 +6,7 @@ def index
 		@kobo_info.each do |kobo_info|
 		  begin
 		  	#this pulls in new records that have been added to the api and adds them to the database.  it doesn't pull in records from the api that are already in the db
-		    KoboApi.find_or_create_by(lemurs_quantity: kobo_info['lemurs_quantity'], month_and_year:  Date.parse(kobo_info['month_and_year']), _geolocation: kobo_info['_geolocation'])
+		    KoboApi.find_or_create_by(lemurs_quantity: kobo_info['lemurs_quantity'], month_and_year:  Date.parse(kobo_info['month_and_year']), _geolocation: kobo_info['_geolocation'].split(",").map { |s| s.to_i })
 		  #some of my records don't have valid date values, so `rescue` is added to keep rails from returning a `notfound` page.  quick tutorial here:  http://www.rubytutorial.io/rails-rescue_from/
 		  rescue 
 		    puts "rescued"
