@@ -2,7 +2,7 @@ namespace :populate do
   desc 'populate db with geographic data'
   task data: :environment do
     require 'rgeo-shapefile'
-    RGeo::Shapefile::Reader.open('/Users/rislam/Desktop/Development/others/CodeMentor/Toby-Schaeffer/admin1/MDG_adm1.shp', :factory => MySpatialTable::FACTORY) do |file|
+    RGeo::Shapefile::Reader.open('//Users/toby/code/projects/lemurSurvey/data/geodata/MDG_adm_shp/MDG_adm1.shp', :factory => MySpatialTable::FACTORY) do |file|
 
       # see the file content
       puts "file: #{file.inspect}"
