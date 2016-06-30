@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160621212603) do
+ActiveRecord::Schema.define(version: 20160630134013) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20160621212603) do
     t.date    "month_and_year"
     t.text    "_geolocation"
     t.text    "lemur_category"
+    t.string  "location_admin1"
+    t.string  "location_admin2"
   end
 
   create_table "my_spatial_table", force: :cascade do |t|
