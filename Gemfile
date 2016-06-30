@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'activerecord-postgis-adapter'
+gem "rgeo"
+gem "rgeo-shapefile"
+
 # gem 'active_model_serializers', '~> 0.8.3'
 gem 'active_model_serializers', :git => 'git://github.com/AskNative/active_model_serializers.git', :branch => '0-8-stable'
 gem 'rest-client'

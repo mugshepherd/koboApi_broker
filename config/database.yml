@@ -15,8 +15,11 @@
 # gem 'pg'
 #
 development:
-  adapter: postgresql
+  adapter: postgis
   encoding: unicode
+  postgis_extension: postgis      # default is postgis
+  postgis_schema: public          # default is public
+  schema_search_path: public,postgis
   database: koboApi_development
   pool: 5
 

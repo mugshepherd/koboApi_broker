@@ -11,16 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160620063545) do
+ActiveRecord::Schema.define(version: 20160630134013) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "postgis"
 
   create_table "kobo_apis", force: :cascade do |t|
     t.integer "lemurs_quantity"
     t.date    "month_and_year"
     t.text    "_geolocation"
     t.text    "lemur_category"
+    t.string  "location_admin1"
+    t.string  "location_admin2"
+  end
+
+  create_table "my_spatial_table", force: :cascade do |t|
+    t.geography "polygon_data", limit: {:srid=>4326, :type=>"polygon", :geographic=>true}
   end
 
 end

@@ -9,7 +9,6 @@ namespace :populate do
       # we need to extract the data from this file object and
       # then create the record with that data using
       # MySpatialTable.create(:polygon_data => data_from_file)
-      
       # try 1: didn't work
       # file.each do |record|
       #   record.geometry.projection.each do |poly|
