@@ -4,7 +4,8 @@
 # Examples:
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+#   Mayor.create(name: 'Emanuel', city: cities.first)	
+KoboApi.delete_all
 @kobo_info = KoboApi.get_api_info
 @kobo_info.each do |kobo_info|
   begin
