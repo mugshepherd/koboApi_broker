@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160630174055) do
+ActiveRecord::Schema.define(version: 20160705203507) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,9 @@ ActiveRecord::Schema.define(version: 20160630174055) do
     t.text    "lemur_category"
     t.string  "location_admin1"
     t.string  "location_admin2"
+    t.integer "record_id"
+    t.string  "sighting_month"
+    t.string  "sighting_year"
   end
 
   create_table "my_spatial_table", force: :cascade do |t|
